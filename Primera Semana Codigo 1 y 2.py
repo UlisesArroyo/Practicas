@@ -28,8 +28,7 @@ transform3 = transforms.Compose([
 
  # Cargamos la imagen del disco duro
 imagen = cv2.imread("dog.jpg")
- #cv2.imshow("prueba", imagen)
- #cv2.waitKey(0)
+
 
 
 
@@ -43,11 +42,6 @@ imagen_t = imagen_t.crop((0,0,(width/2),height))
 imagen_t = transform3(imagen_t)
 
 imagen_t.cpu
-
-
-
-
-#imagen_nueva = imagen_t[0].numpy().transpose(1,2,0)
 
 
 #4° Transformacion de tensor a numphy 
